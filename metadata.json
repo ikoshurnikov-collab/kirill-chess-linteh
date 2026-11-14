@@ -1,0 +1,6 @@
+{
+  "name": "Шахматы от Кирилла — Линтех №28",
+  "description": "Авторское кроссплатформенное обучающее шахматное веб-приложение и PWA ученика 4 класса Лицея информационных технологий «Линтех №28» г. Кирова (kirill-chess-linteh.ru).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Onest', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Golos Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100dvh;
+    max-height: 100dvh;
+    overflow: hidden;
+    overscroll-behavior: none;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: 100%;
+    background-color: #0B1120;
+    color: #F8FAFC;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, button, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  input, textarea, select {
+    font-size: 16px !important;
+    -webkit-user-select: text;
+    user-select: text;
+  }
+}
+
+/* Custom thin scrollbar for inner scroll areas */
+.custom-scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 9999px;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-diploma,
+  #printable-diploma * {
+    visibility: visible;
+  }
+  #printable-diploma {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+    z-index: 99999;
+    padding: 24px;
+  }
+}

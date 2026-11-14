@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="112" fill="#0B1120"/>
+  <rect x="24" y="24" width="464" height="464" rx="92" fill="#131C2E" stroke="#F59E0B" stroke-width="10"/>
+  <!-- Chessboard subtle grid -->
+  <g opacity="0.18" fill="#769656">
+    <rect x="64" y="64" width="96" height="96" rx="8"/>
+    <rect x="256" y="64" width="96" height="96" rx="8"/>
+    <rect x="160" y="160" width="96" height="96" rx="8"/>
+    <rect x="352" y="160" width="96" height="96" rx="8"/>
+    <rect x="64" y="256" width="96" height="96" rx="8"/>
+    <rect x="256" y="256" width="96" height="96" rx="8"/>
+    <rect x="160" y="352" width="96" height="96" rx="8"/>
+    <rect x="352" y="352" width="96" height="96" rx="8"/>
+  </g>
+  <!-- 2.5D Pedestal -->
+  <ellipse cx="256" cy="416" rx="126" ry="30" fill="#090D16"/>
+  <ellipse cx="256" cy="404" rx="118" ry="26" fill="#D97706"/>
+  <ellipse cx="256" cy="396" rx="110" ry="22" fill="#FDE68A"/>
+  <!-- Staunton Knight & Crown -->
+  <path d="M168 388 C168 310, 198 265, 224 238 C202 238, 174 252, 156 240 C142 230, 146 205, 168 184 C186 166, 200 144, 214 114 L236 142 C258 134, 288 142, 314 168 C346 200, 356 266, 344 388 Z" fill="#FFFDF7" stroke="#1E293B" stroke-width="14" stroke-linejoin="round"/>
+  <circle cx="212" cy="182" r="10" fill="#1E293B"/>
+  <!-- Gold Crown Badge -->
+  <path d="M210 106 L228 72 L256 96 L284 72 L302 106 Z" fill="#F59E0B" stroke="#FEF3C7" stroke-width="6" stroke-linejoin="round"/>
+</svg>
